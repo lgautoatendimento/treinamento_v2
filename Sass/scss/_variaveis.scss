@@ -1,0 +1,24 @@
+$prefixo: ".lg-";
+
+$primario: #399cd6;
+$secundario: #6c757d;
+$sucesso: #28a745;
+$atencao: #ffc107;
+$erro: #dc3545;
+
+$cores: (
+  "primario": $primario,
+  "secundario": $secundario,
+  "sucesso": $sucesso,
+  "atencao": $atencao,
+  "erro": $erro,
+);
+
+$tamanho-padrao: 12px;
+$tamanho-medio: 16px;
+$tamanho-grande: 20px;
+
+$tamanhos: (
+  "medio": $tamanho-medio,
+  "grande": $tamanho-grande
+);

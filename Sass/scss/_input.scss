@@ -1,0 +1,6 @@
+#{$prefixo}input {
+  @extend %estiloPadrao;
+
+  @include adicioneVariacaoDeTamanhos;
+  @include adicioneVariacaoDeCores;
+}

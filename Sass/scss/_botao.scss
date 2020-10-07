@@ -1,0 +1,14 @@
+#{$prefixo}botao {
+  @extend %estiloPadrao;
+
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+
+  &:disabled {
+    cursor: no-drop;
+  }
+
+  @include adicioneVariacaoDeTamanhos;
+  @include adicioneVariacaoDeCores(true);
+}

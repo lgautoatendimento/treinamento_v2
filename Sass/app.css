@@ -1,0 +1,173 @@
+.lg-botao, .lg-input {
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+  font-size: 12px;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.lg-botao:focus, .lg-input:focus {
+  outline: none;
+}
+
+.lg-botao {
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.lg-botao:disabled {
+  cursor: no-drop;
+}
+
+.lg-botao--medio {
+  font-size: 16px;
+}
+
+.lg-botao--grande {
+  font-size: 20px;
+}
+
+.lg-botao--primario {
+  color: #399cd6;
+  border-color: #399cd6;
+  background-color: #fff;
+}
+
+.lg-botao--primario:focus {
+  border-color: #8ec6e7;
+  box-shadow: 0 0 0 0.2rem rgba(57, 156, 214, 0.3);
+}
+
+.lg-botao--primario:active {
+  background-color: #399cd6;
+  color: #fff;
+}
+
+.lg-botao--secundario {
+  color: #6c757d;
+  border-color: #6c757d;
+  background-color: #fff;
+}
+
+.lg-botao--secundario:focus {
+  border-color: #a1a8ae;
+  box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.3);
+}
+
+.lg-botao--secundario:active {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.lg-botao--sucesso {
+  color: #28a745;
+  border-color: #28a745;
+  background-color: #fff;
+}
+
+.lg-botao--sucesso:focus {
+  border-color: #5dd879;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.3);
+}
+
+.lg-botao--sucesso:active {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.lg-botao--atencao {
+  color: #ffc107;
+  border-color: #ffc107;
+  background-color: #fff;
+}
+
+.lg-botao--atencao:focus {
+  border-color: #ffdb6d;
+  box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.3);
+}
+
+.lg-botao--atencao:active {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+.lg-botao--erro {
+  color: #dc3545;
+  border-color: #dc3545;
+  background-color: #fff;
+}
+
+.lg-botao--erro:focus {
+  border-color: #eb8c95;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.3);
+}
+
+.lg-botao--erro:active {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.lg-input--medio {
+  font-size: 16px;
+}
+
+.lg-input--grande {
+  font-size: 20px;
+}
+
+.lg-input--primario {
+  color: #399cd6;
+  border-color: #399cd6;
+  background-color: #fff;
+}
+
+.lg-input--primario:focus {
+  border-color: #8ec6e7;
+  box-shadow: 0 0 0 0.2rem rgba(57, 156, 214, 0.3);
+}
+
+.lg-input--secundario {
+  color: #6c757d;
+  border-color: #6c757d;
+  background-color: #fff;
+}
+
+.lg-input--secundario:focus {
+  border-color: #a1a8ae;
+  box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.3);
+}
+
+.lg-input--sucesso {
+  color: #28a745;
+  border-color: #28a745;
+  background-color: #fff;
+}
+
+.lg-input--sucesso:focus {
+  border-color: #5dd879;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.3);
+}
+
+.lg-input--atencao {
+  color: #ffc107;
+  border-color: #ffc107;
+  background-color: #fff;
+}
+
+.lg-input--atencao:focus {
+  border-color: #ffdb6d;
+  box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.3);
+}
+
+.lg-input--erro {
+  color: #dc3545;
+  border-color: #dc3545;
+  background-color: #fff;
+}
+
+.lg-input--erro:focus {
+  border-color: #eb8c95;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.3);
+}
+
+/*# sourceMappingURL=app.css.map */

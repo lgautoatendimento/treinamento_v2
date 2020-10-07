@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue.js</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+  <!-- Raiz da aplicação Vue -->
+  <div id="app">
+    <lg-label @fui-clicado="exibaLogDeClique"></lg-label>
+
+    <input type="text" v-model="nome">
+    <input type="text" v-model="sobrenome">
+    <br>
+    <lg-label :texto="nomeCompleto"></lg-label>
+    <br>
+    <button @click="exibirMensagem('Olá!')">Registrar</button>
+
+    <hr>
+
+    <lg-input data-teste="assadf" label="Campo customizado" v-model="campoCustomizado">
+      <template v-slot:label="slotProps">
+        <h4>{{ slotProps.info }}</h4>
+      </template>
+    </lg-input>
+    {{ campoCustomizado }}
+  </div>
+
+  <!-- Template p/ componente Label -->
+  <template id="label">
+    <h2 @click="exibaTexto">{{ texto }}</h2>
+  </template>
+
+  <!-- Template p/ componente de Input -->
+  <template id="input">
+    <div v-bind="$attrs">
+      <slot name="label" :info="label">
+        <label>{{ label }}</label>
+      </slot>
+      <input type="text" :value="value" @input="$emit('change', $event.target.value)">
+    </div>
+  </template>
+
+  <script>
+
+    // Componente de Label
+    Vue.component('lg-label', {
+      props: {
+        texto: {
+          type: String,
+          default: 'LG lugar de gente'
+        }
+      },
+      methods: {
+        exibaTexto() {
+          console.log(this.texto);
+          this.$emit('fui-clicado', this.texto);
+        }
+      },
+      template: '#label'
+    })
+
+    // Componente de Input
+    Vue.component('lg-input', {
+      model: {
+        prop: 'value',
+        event: 'change'
+      },
+      props: {
+        value: {
+          type: String,
+          default: ''
+        },
+        label: {
+          type: String,
+          default: ''
+        }
+      },
+      template: '#input'
+    })
+
+    // Instância principal
+    var vm = new Vue({
+      el: '#app',
+      data: function () {
+        return {
+          nome: 'asdf',
+          sobrenome: '',
+          campoCustomizado: 'Eu sou customizado!'
+        };
+      },
+      computed: {
+        nomeCompleto: function () {
+          return `${this.nome} ${this.sobrenome}`;
+        }
+      },
+      methods: {
+        exibirMensagem: function (msg) {
+          alert(this.nomeCompleto);
+        },
+        exibaLogDeClique: function (evt) {
+          console.log('Evento de clique: %s', evt);
+        }
+      },
+      watch: {
+        nome: function (val, oldVal) {
+          console.log('novo: %s, antigo: %s', val, oldVal)
+        }
+      },
+      mounted: function () {
+        console.log('HTML Montado!');
+      }
+    })
+  </script>
+</body>
+
+</html>

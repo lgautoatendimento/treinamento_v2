@@ -1,0 +1,59 @@
+## Treinamento Front-end - LG lugar de gente
+---
+### Conteúdo e links úteis
+
+- Ambiente
+    - NodeJS (https://nodejs.org)
+      - yarn (https://yarnpkg.com)
+    - Visual Studio Code
+      - https://code.visualstudio.com
+    - EditorConfig
+      - https://editorconfig.org
+    - Sugestão de Extensões
+        - Vetur (https://marketplace.visualstudio.com/items?itemName=octref.vetur)
+        - Bracket Pair Colorizer 2 (https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2)
+        - Auto Rename Tag (https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+        - CSS Formatter (https://marketplace.visualstudio.com/items?itemName=aeschli.vscode-css-formatter)
+        - EditorConfig for VS Code (https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+        - Material Icon Theme (https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+        - Live Server (https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+        - SCSS Formatter (https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter)
+        - Error Lens (https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)
+- CSS 3
+    - BEM
+        - http://getbem.com
+    - Sass 
+      - https://sass-lang.com
+    - Flexbox
+      - https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Flexible_Box_Layout/Conceitos_Basicos_do_Flexbox
+      - https://origamid.com/projetos/flexbox-guia-completo
+      - https://www.devmedia.com.br/css3-flexbox-funcionamento-e-propriedades/29532
+      - https://medium.com/collabcode/pare-de-chutar-e-aprenda-como-funciona-flexbox-01-f75be5f35d3d
+    - Media Queries 
+      - https://developer.mozilla.org/pt-BR/docs/Web/Guide/CSS/CSS_Media_queries
+      - https://www.devmedia.com.br/utilizando-css-media-queries/27085
+- Atomic Design 
+  - https://bradfrost.com/blog/post/atomic-web-design
+- HTML 5
+    - Exceto tags incompatíveis com IE11
+      - https://caniuse.com/?compare=ie+11&compareCats=HTML5
+    - Acessibilidade
+      - https://developer.mozilla.org/pt-BR/docs/Learn/Accessibility/HTML
+      - https://developer.mozilla.org/pt-BR/docs/Web/Accessibility/ARIA/ARIA_Techniques
+- JavaScript 
+    - Developer Mozilla (https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+    - Novidades ES6 (https://medium.com/@matheusml/o-guia-do-es6-tudo-que-voc%C3%AA-precisa-saber-8c287876325f)
+    - ESLint (https://eslint.org)
+    - Babel (https://babeljs.io)
+    - Jest (https://jestjs.io)
+    - Yalc (https://github.com/whitecolor/yalc)
+- Vue.js 2.x (https://br.vuejs.org)
+    - Guia de Estilo (https://br.vuejs.org/v2/style-guide)
+    - Segurança (https://br.vuejs.org/v2/guide/security.html)
+    - Single File Components (https://br.vuejs.org/v2/guide/single-file-components.html)
+    - Vuex (https://vuex.vuejs.org/ptbr)
+    - Vue-Router (https://router.vuejs.org)
+    - PrimeVue (https://www.primefaces.org/primevue/showcase-v2/#)
+    - Axios (https://github.com/axios/axios)
+- SonarQube (https://www.sonarqube.org)
+    - JavaScript (https://docs.sonarqube.org/latest/analysis/languages/javascript)

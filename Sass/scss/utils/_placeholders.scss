@@ -1,0 +1,10 @@
+%estiloPadrao {
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+  font-size: $tamanho-padrao;
+  border-radius: 3px;
+  padding: 10px;
+
+  &:focus {
+    outline: none;
+  }
+}

@@ -1,0 +1,29 @@
+@mixin adicioneVariacaoDeTamanhos {
+  @each $nome, $tamanho in $tamanhos {
+    &--#{$nome} {
+      font-size: $tamanho;
+    }
+  }
+}
+
+@mixin adicioneVariacaoDeCores($adicionarEstadoAtivo: false) {
+  @each $nome, $cor in $cores {
+    &--#{$nome} {
+      color: $cor;
+      border-color: $cor;
+      background-color: #fff;
+
+      &:focus {
+        border-color: lighten($cor, 20%);
+        box-shadow: crieBoxShadow($cor);
+      }
+
+      @if $adicionarEstadoAtivo {
+        &:active {
+          background-color: $cor;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
